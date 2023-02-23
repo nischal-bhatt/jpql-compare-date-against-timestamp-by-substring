@@ -44,6 +44,7 @@ public class EmployeeController {
 	@GetMapping("/getEmployeebyStatusAndDate")
 	public List<Employee> getEmployeesByDept() throws ParseException
 	{
+		System.out.println("its working");
 		Date d = new SimpleDateFormat("yyyy-MM-dd").parse("2018-03-05");
 		
 		String s = "CREATED";
